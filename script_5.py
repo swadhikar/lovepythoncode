@@ -9,33 +9,31 @@ condition and another if-else to carry out processing. Consider the below
 codes, they are technically equal but far simpler and readable in python.
 """
 
-
 word_list = ['Mary', 'had', 'a', 'little', 'lamb']
-search_word = 'John'
-
 
 # Deprecated approach similar in other languages
-is_word_found = False  # An explicit flag to check if word exists
+is_matched = False  # An explicit flag to check if word exists
 
 # Loop to traverse each element in the list
+# and see if any of the names starts with 'J'
 for word in word_list:
-    if word == search_word:
-        is_word_found == True
+    if word.startswith('j'):
+        is_matched == True
 
-# Check for item existance
-if is_word_found:
-    print('Found {}!'.format(search_word))
+# Check for condition with another if statement
+if is_matched:
+    print('Match found!')
 else:
-    print('{} is not found!'.format(search_word))
+    print('Match not found!')
 
 
 
 # Pythonic approach to find item existence
 for word in word_list:
-    if word == search_word:
-        print('Found {}!'.format(search_word))
+    if word.startswith('j'):
+        print('Found {} that starts with "j"!'.format(word))
         break       # break and exit from the "for-else" loop
 else:
-    # for loop is never been broken
-    print('{} is not found!'.format(search_word))
+    # for loop is never been broken at this point
+    print('Match not found!')
 
