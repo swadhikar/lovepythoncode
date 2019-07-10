@@ -18,10 +18,10 @@ class House:
         return bool(self.gardens_count)    # bool(0 or None) -> False
 
 house_1 = House(3, 2)
-print( house_1.has_garden() )    # True
+print( house_1.has_garden )    # True
 
 house_2 = House(2)               # default arg, gardens_count=None
-print( house_2.has_garden() )    # False
+print( house_2.has_garden )    # False
 
 house_3 = House(2, 0)
-print( house_3.has_garden() )    # False
+print( house_3.has_garden )    # False
