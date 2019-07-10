@@ -1,4 +1,5 @@
 class StringNotAllowedException(Exception):  # inherit from Exception class
+    """ Custom exception to represent string is disallowed """
     pass
 
 
