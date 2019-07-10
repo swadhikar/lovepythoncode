@@ -12,7 +12,7 @@ for num in unclean_list:
             raise StringNotAllowedException  # raise exception intentionally
 
         square_root = num ** 0.5
-        print('square root of "{}": {}'.format(num, square_root
+        print('square root of "{}": {}'.format(num, square_root))
 
     except StringNotAllowedException as e:
         print('<<<Invalid number: {}>>>'.format(num))  # handle exception
