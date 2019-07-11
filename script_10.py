@@ -7,6 +7,11 @@ acct_balance_db = {
 def deposit_salary(*acct_list, amount=0):
     print(type(acct_list))    # <class 'tuple'>
 
+    """
+        If not tuple, acct_list can potentially be modified and hacked!
+        In order to ensure the callers of this API, unpacks to tuple
+        which is an immutable datatype
+    """
     # acct_list[0] = 'fake_acct'  # TypeError: tuple item assignment
 
     for acct in acct_list:
