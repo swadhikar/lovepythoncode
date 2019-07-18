@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 class MyClass:
     def __init__(self):
         """Object constructor"""
@@ -26,3 +27,11 @@ print( help(MyClass) )
 #  |      @param   arg_1 (string)   simple argument
 #  |      @param   arg_2 (int)      another argument
 #  |
+=======
+def is_palindrome(string):
+    return string[::-1] == string
+
+
+is_palindrome('amma')     # True
+is_palindrome('hello')    # False
+>>>>>>> 3f5b51e9fd1e1862d60daa827651a1c86225a3d0
