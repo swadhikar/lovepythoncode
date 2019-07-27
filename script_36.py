@@ -13,7 +13,7 @@ def scan(filename, text='python'):
 
 def search_and_copy(f_substr, src_path, dest_path):
     path = pathlib.Path(src_path)
-    files = path.glob('**/file*')
+    files = path.glob('**/{}*'.format(f_substr))
 
     for file in (str(f) for f in files):
         if scan(str(file), 'python'):
