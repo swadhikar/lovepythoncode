@@ -1,4 +1,11 @@
 def print_welcome(num1, num2, design='.|.', text='WELCOME'):
+    """
+        Prints a door mat with given message
+        @param    num1    (int)   Number of rows
+        @param    num2    (int)   Number of characters in a line
+        @param    design  (str)   Design pattern
+        @param    text    (str)   Greeting message  
+    """
     mid = num1 // 2
     pvt = 1
     fmt = '{:-^%d}' % num2
